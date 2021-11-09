@@ -11,7 +11,7 @@ body{
 	background: #fff;
 }
 
-#painel{
+#tela{
 	height: 1000px;
 	background: #2DA2BF;
 	margin-left: 740px;
@@ -21,6 +21,7 @@ body{
 }
 
 .panel{
+	font-size: 35px;
 	width: 100%;
 	background: #2DA2BF;
 
