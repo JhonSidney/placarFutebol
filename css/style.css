@@ -11,11 +11,21 @@ body{
 	background: #fff;
 }
 
+
+tr {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+
 #tela{
-	height: 1000px;
+	margin-top: 5%;
+	height: 805px;
 	background: #2DA2BF;
-	margin-left: 740px;
-	margin-right: 740px;
+	margin-left: 42%;
+	margin-right: 42%;
 	border:  3px ridge #24879F;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,13 +34,16 @@ body{
 	font-size: 35px;
 	width: 100%;
 	background: #2DA2BF;
-
-	
 }
 
 .panel2{
 	margin-top: 50px;
 }
+
+.panel2{
+	margin-top: 50px;
+}
+
 
 .tabela1{
 	padding: 20px;
