@@ -7,47 +7,63 @@ html {
 	height: 100%;
 }
 
-body{
+body {
 	background: #fff;
 }
 
-
-tr {
+tbody {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
 }
 
-
-
-#tela{
+#tela {
 	margin-top: 5%;
 	height: 805px;
 	background: #2DA2BF;
 	margin-left: 42%;
 	margin-right: 42%;
-	border:  3px ridge #24879F;
+	border: 3px ridge #24879F;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.panel{
+.panel {
 	font-size: 35px;
-	width: 100%;
+	font-weight: bold; width : 100%;
 	background: #2DA2BF;
-}
-
-.panel2{
-	margin-top: 50px;
-}
-
-.panel2{
-	margin-top: 50px;
-}
-
-
-.tabela1{
-	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 100%;
-	border:  3px ridge #24879F;
 }
 
+.panel2 {
+	margin-top: 50px;
+}
+
+.tabela1 {
+	width: 96%; padding-top : 20px; padding-bottom : 20px;
+	border: 3px ridge #24879F;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.tabela1>tbody>tr {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.tabela2>tbody>tr {
+	margin-left: 5px; display : flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-size: 35px;
+	font-weight: bold;
+	display: flex;
+}
+
+.tabela2>tbody>tr>td>img {
+	margin-right: 15px;
+}
