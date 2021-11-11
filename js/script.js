@@ -23,6 +23,22 @@ function gerarHash(nome){
 	}
 }
 
+function placar(forca, hash_nome) {
+var min = 1/(forca * hash_nome);
+var max = 5/(forca * hash_nome);
+var aleatorio;
+
+aleatorio = numAleatorio(min, max);
+var placar = forca * hash_nome * aleatorio;
+
+//arredondar placar para o inteiro mais próximo;
+return Math.round(placar);
+}
+
+function numAleatorio(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
 
 var times = 
 	[
