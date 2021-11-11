@@ -1,22 +1,157 @@
 
+var alfabeto = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
-// Captura a referência da tabela com id “minhaTabela”
-var table = document.getElementById("tabela1");
-// Captura a quantidade de linhas já existentes na tabela
-var numOfRows = table.rows.length;
-// Captura a quantidade de colunas da última linha da tabela
-var numOfCols = table.rows[numOfRows-1].insertCell.length;
+var nomeSeparado;
+var somaNome;
+gerarHash('SaoPaulo');
 
-// Insere uma linha no fim da tabela.
-var newRow = table.insertRow(numOfRows);
- 
-// Faz um loop para criar as colunas
-for (var j = 0; j < numOfCols; j++) {
-    // Insere uma coluna na nova linha 
-    newCell = newRow.insertCell(j);
-    // Insere um conteúdo na coluna
-    newCell.innerHTML = "Linha "+ numOfRows + " – Coluna "+ j;
+function gerarHash(nome){
+	var temEspaco = nome.indexOf(" ");
+	nomeSeparado = Array.from(nome.toLowerCase());
+	somaNome = 0;
+	
+	nomeSeparado.forEach(function(x, i) {
+	    console.log(alfabeto.indexOf(teste[i]));
+		somaNome = somaNome + alfabeto.indexOf(nomeSeparado[i]);
+	})
+	if(temEspaco >= 0){
+		return somaNome + 1;
+
+	}else{
+		return somaNome;
+
+	}
 }
+
+
+var times = 
+	[
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 5,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 1,
+		 nome: "Internacional",
+		 forca: 8,
+		 hash_nome: gerarHash("Internacional")
+	 },
+	 {
+		 id: 2,
+		 nome: "Sao Paulo",
+		 forca: 7,
+		 hash_nome: gerarHash("GreSao Paulomio")
+	 },
+	 {
+		 id: 3,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 4,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 {
+		 id: 0,
+		 nome: "Gremio",
+		 forca: 1,
+		 hash_nome: gerarHash("Gremio")
+	 },
+	 
+	 
+             
+	]
+
+console.log(times[0])
 
 
 
