@@ -8,105 +8,102 @@
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 
 </head>
-<body>
+<body onload='start();'>
 
 	<div id="tela">
-		<div class="panel">
-			<table class="tabela1">
+	
+		<div id="panel1">
+			<table id="tabela1">
 				<tr style="padding-bottom: 20px;">
 					<th colspan="5"><span>Confrontos</span></th>
 				</tr>
 				<tr>
 					<td><img src="images/times/gremio_45x45.png"></td>
-					<td><span>2</span></td>
+					<td><span id="0"></span></td>
 					<td>X</td>
-					<td><span>2</span></td>
+					<td><span id="1"></span></td>
 					<td><img src="images/times/internacional_45x45.png"></td>
 				</tr>
 				<tr>
 					<td><img src="images/times/sao_paulo_45x45.png"></td>
-					<td><span>2</span></td>
+					<td><span id="2"></span></td>
 					<td><span>X</span></td>
-					<td><span>2</span></td>
+					<td><span id="3"></span></td>
 					<td><img src="images/times/corinthians_45x45.png"></td>
 				</tr>
 				<tr>
 					<td><img src="images/times/atl_mg_45x45.png"></td>
-					<td><span>2</span></td>
+					<td><span id="4"></span></td>
 					<td><span>X</span></td>
-					<td><span>2</span></td>
+					<td><span id="5"></span></td>
 					<td><img src="images/times/cruzeiro_45x45.png"></td>
 				</tr>
 				<tr>
 					<td><img src="images/times/flamengo_45x45.png"></td>
-					<td><span>2</span></td>
+					<td><span id="6"></span></td>
 					<td><span>X</span></td>
-					<td><span>2</span></td>
+					<td><span id="7"></span></td>
 					<td><img src="images/times/vasco_45x45.png"></td>
 				</tr>
 				<tr>
 					<td><img src="images/times/botafogo_45x45.png"></td>
-					<td><span>2</span></td>
+					<td><span id="8"></span></td>
 					<td><span>X</span></td>
-					<td><span>2</span></td>
+					<td><span id="9"></span></td>
 					<td><img src="images/times/fluminense_45.png"></td>
 				</tr>
 				<tr>
 					<td><img src="images/times/palmeiras_45x45.png"></td>
-					<td><span>2</span></td>
+					<td><span id="10"></span></td>
 					<td><span>X</span></td>
-					<td><span>2</span></td>
+					<td><span id="11"></span></td>
 					<td><img src="images/times/santos_45x45.png"></td>
 				</tr>
 				<tr>
 					<td><img src="images/times/sport_45.png"></td>
-					<td><span>2</span></td>
+					<td><span id="12"></span></td>
 					<td><span>X</span></td>
-					<td><span>2</span></td>
+					<td><span id="13"></span></td>
 					<td><img src="images/times/nautico_45.png"></td>
 				</tr>
 				<tr>
 					<td><img src="images/times/ponte_preta_45.png"></td>
-					<td><span>2</span></td>
+					<td><span id="14"></span></td>
 					<td><span>X</span></td>
-					<td><span>2</span></td>
+					<td><span id="15"></span></td>
 					<td><img src="images/times/portuguesa_sp45.png"></td>
 				</tr>
 				<tr>
 					<td><img src="images/times/atl_go_45x45.png"></td>
-					<td><span>2</span></td>
+					<td><span id="16"></span></td>
 					<td><span>X</span></td>
-					<td><span>2</span></td>
+					<td><span id="17"></span></td>
 					<td><img src="images/times/bahia_45x45.png"></td>
 				</tr>
 				<tr>
 					<td><img src="images/times/figueirense_45x45.png"></td>
-					<td><span>2</span></td>
+					<td><span id="18"></span></td>
 					<td><span>X</span></td>
-					<td><span>2</span></td>
+					<td><span id="19"></span></td>
 					<td><img src="images/times/coritiba_45x45.png"></td>
 				</tr>
-
 			</table>
-
-
 		</div>
-		<div class="panel2">
-			<table class="tabela2">
-				<tr>
+		
+		<div id="panel2">
+			<table id="tabela2">
+				<tr tabindex="0" id="result" onclick='todosPlacares();' >
 					<td><img src="images/legenda_amarelo_30.png"></td>
 					<td>Resultado</td>
 				</tr>
-				<tr>
+				<tr tabindex="0" id="exit" onclick='sair();'>
 					<td><img src="images/legenda_vermelho_30.png"></td>
 					<td>Sair</td>
 				</tr>
 			</table>
-
 		</div>
 
-
 	</div>
-
+	
 </body>
 </html>
